@@ -1,5 +1,5 @@
-import Navbar from "../src/Components/Navbar/Navbar";
-import "../../../L-square-QTify_local/qtify/src/App.css"
+import Navbar from "./Components/Navbar/Navbar";
+import "./App.css"
 
 export default function App(){
   return (
