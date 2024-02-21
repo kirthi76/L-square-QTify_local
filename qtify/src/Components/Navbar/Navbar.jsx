@@ -2,8 +2,8 @@ import React from "react";
 import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
 import SearchBar from "../SearchBar/SearchBar";
-import "./NavBar.css";
-const NavBar = () => {
+import "./Navbar.css";
+const Navbar = () => {
   return (
     <nav className="navbar">
       <Logo />
@@ -13,4 +13,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;
