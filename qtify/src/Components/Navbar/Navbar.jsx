@@ -1,16 +1,18 @@
 import React from "react";
 import Button from "../Button/Button";
-import Logo from "../Logo/Logo";
-import SearchBar from "../SearchBar/SearchBar";
-import "../../Components/Navbar/Navbar.css"
-const NavBar = () => {
-  return (
-    <nav className="navbar">
-      <Logo />
-      <SearchBar />
-      <Button text="Give Feedback" />
-    </nav>
-  );
-};
+import Search from "../Search/Search";
+import styles from './Navbar.module.css'
+import LogoImage from "../../Assets/logoImage.png";
 
-export default NavBar;
+
+export default function Navbar(){
+    return(
+        <>
+            <nav className={styles.navbar}>
+                <div className={styles.logoDiv}><img  src={LogoImage} alt="logo" width={67}/></div>
+                 <Search search={"Search a song of your choice"}/>
+                <Button children="Give Feedback"/>
+            </nav>
+        </>
+    )
+}
