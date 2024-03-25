@@ -1,5 +1,4 @@
-.hero{
-    background-color: var(--black-color);
+.hero {
     height: 270px;
     display: flex;
     justify-content: center;
@@ -7,3 +6,4 @@
     text-align: center;
     gap: 30px;
 }
+
