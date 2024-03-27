@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ searchData }) {
     return (
         <>
         <nav className={styles.navbar}>
@@ -13,7 +13,7 @@ function Navbar() {
                 <Logo/>
             </Link>
             <Search
-                placeholder="Search a song of your choice"
+                placeholder="Search a song of your choice"  searchData={searchData}
                 
             />
             <Button>Give Feedback</Button>
