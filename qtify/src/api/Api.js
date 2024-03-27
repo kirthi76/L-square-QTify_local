@@ -19,6 +19,3 @@ export const fetchNewAlbums = async () => {
         console.error(e);
     }
 }
-
-
-

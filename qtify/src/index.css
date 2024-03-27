@@ -1,42 +1,43 @@
-
 :root {
-  --primary-color: #34c94b;
-  --black-color: #121212;
-  --white-color: #ffffff;
+  --color-primary: #34c94b;
+  --color-black: #121212;
+  --color-white: #ffffff;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
-html, body{
+* {
+  margin: 0;
+}
+html,
+body {
   height: 100%;
 }
+
 body {
-  background-color: var(--black-color);
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  color: var(--white-color)
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
-
 img,
 picture,
 video,
 canvas,
-svg{
+svg {
   display: block;
   max-width: 100%;
 }
-
 input,
 button,
 textarea,
-select{
+select {
   font: inherit;
 }
-
 p,
 h1,
 h2,
@@ -46,7 +47,6 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-
 #root,
 #__next {
   isolation: isolate;
